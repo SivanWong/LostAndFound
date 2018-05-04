@@ -1,0 +1,2 @@
+/* pages/lostermsg/lostermsg.wxss */
+@import "../foundermsg/foundermsg.wxss";

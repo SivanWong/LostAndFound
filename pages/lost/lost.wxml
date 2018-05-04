@@ -1,0 +1,37 @@
+<!--pages/lost/lost.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class='lost_title'>{{text}}</view>
+    <view class='lost_Form'>
+      <form  bindsubmit="formSubmit">
+      <view class='lost_items'>
+         <label for='cardUserName'>姓名：</label>
+        <input type='text' id='cardUserName' bindblur='write'></input>
+        <icon type='warn' size="18" style="display:{{display1}};"></icon>
+      </view>
+      <view class='lost_items'>
+        <label for='userId'>学号：</label>
+        <input type='number' id='userId' bindblur='write'></input>
+        <icon type='warn' size="18" style="display:{{display2}};"></icon>
+      </view>
+      <view class='lost_items'>
+        <label for='cardId'>卡号：</label>
+        <input type='number' id='cardId' bindblur='write'></input>
+      </view>
+      <view class='lost_items'>
+        <label for='weixinNum'>微信号：</label>
+        <input type='text' id='weixinNum' bindblur='write'></input>
+        <icon type='warn' size="18" style="display:{{display3}};"></icon>
+      </view>
+      <view class='lost_items'>
+        <label for='phone'>手机号：</label>
+        <input type='number' id='phone' bindblur='write'></input>
+        <icon type='warn' size="18" style="display:{{display4}};"></icon>
+      </view>
+      </form>
+    </view>
+    <view class='lost_confirm'>
+      <button size='mini' bindtap="confirm" formType="submit">确定</button>
+    </view>
+  </view>
+</view>

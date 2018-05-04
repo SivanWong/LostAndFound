@@ -1,0 +1,91 @@
+::-webkit-scrollbar {
+
+    width: 0;
+
+    height: 0;
+
+    color: transparent;
+
+}
+page{
+  width: 100%;
+}
+.wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.record-title {
+  color: #666;
+  font-size: 60rpx;
+  margin: 40rpx 0;
+}
+
+.record-box {
+  width: 90%;
+  padding: 20rpx 0 45rpx 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -moz-box-shadow: 2px 1px 10px #333333;
+  -webkit-box-shadow: 2px 1px 10px #333333;
+  box-shadow: 2px 1px 10px #333333;
+  border-radius: 15px;
+  margin:40rpx 0;
+}
+
+.msg-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  position: relative;
+  font-size: 35rpx;
+  color: #333;
+  padding: 10rpx 0;
+ 
+}
+
+.msg-box>text {
+  padding: 20rpx;
+}
+
+.msg-box:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.msg-value {
+  padding-left: 30rpx;
+}
+.msg-box .msg-status{
+  position: absolute;
+  bottom: 0;
+  right: 0
+}
+.msg-img image {
+  width: 400rpx;
+  height: 400rpx;
+  border: 1px solid #d9d9d9;
+  margin-top: 70rpx;
+}
+.red{
+  color: red
+}
+.blue{
+  color: blue
+}
+.delete{
+  margin-top: 15px;
+  margin-left: 70%;
+}

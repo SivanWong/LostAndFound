@@ -1,0 +1,15 @@
+<!--pages/lostermsg/lostermsg.wxml-->
+<view class='msg-big-box'>
+  <text class="title">丢卡人信息</text>
+<view class="msg-box">
+  <text>姓名：<text class="msg-value" selectable="true">{{cardUserName}}</text></text>
+  
+</view>
+<view class="msg-box">
+  <text>微信号： <text class="msg-value" selectable="true">{{weixinNum}}</text></text>
+</view>
+<view class="msg-box">
+  <text>手机： <text class="msg-value" selectable="true">{{phone}}</text></text>
+</view>
+
+</view>

@@ -1,0 +1,20 @@
+<view class="log-box">
+  <view class="user-head">
+    <image src="{{userhead}}"></image>
+  </view>
+  <text class="user-name">
+    {{username}}
+  </text>
+</view>
+<navigator url="../lostrecord/lostrecord" class="cells" hover-class="cells-active">
+  <view class="cells-bd">丢卡记录</view>
+  <view class="cells-access"></view>
+</navigator>
+<navigator url="../foundrecord/foundrecord" class="cells" hover-class="cells-active">
+  <view class="cells-bd">捡卡记录</view>
+  <view class="cells-access"></view>
+</navigator>
+<navigator url="../contact/contact" class="cells" hover-class="cells-active">
+  <view class="cells-bd">联系我们</view>
+  <view class="cells-access"></view>
+</navigator>

@@ -1,0 +1,32 @@
+
+<scroll-view scroll-y="true" style="height: 100%">
+  <view class="wrap">
+    <text class="record-title">捡卡记录</text>
+    <view class="record-box" wx:for="{{foundMsg}}">
+      <view class="msg-box">
+        <text>失主姓名：<text class="msg-value" selectable="true">{{item.cardUserName}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>失主学号： <text class="msg-value" selectable="true">{{item.userId}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>失主卡号： <text class="msg-value" selectable="true">{{item.cardId}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>我的微信： <text class="msg-value" selectable="true">{{item.weixinNum}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>我的手机： <text class="msg-value" selectable="true">{{item.phone}}</text></text>
+      </view>
+      <view class="msg-box">
+        <block  wx:if="{{item.extend==0}}">
+           <text class="msg-status red" selectable="true">匹配失败</text>
+        </block>
+       <block wx:else>
+        <text class="mag-status blue" selectable="true" >匹配成功</text>
+        </block>
+      </view>
+      <button type="warn" size="mini" class="delete" data-deleteid="{{item.id}}" bindtap="deleteClick" >删除</button>
+    </view>
+  </view>
+</scroll-view>

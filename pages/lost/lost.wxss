@@ -1,0 +1,31 @@
+/* pages/lost/lost.wxss */
+.lost_title {
+  height: 100rpx;
+  text-align: center;
+  font-size: 78rpx;
+  margin-bottom: 50rpx;
+}
+.lost_Form {
+  padding: 58rpx;
+  width: 434rpx;
+  height: 458rpx;
+  border-left: 8rpx solid #78787A;
+}
+.lost_items label {
+  color: #78787A;
+  width: 188rpx;
+}
+.lost_Form input {
+  border-bottom: 2rpx solid #78787A;
+  width: 280rpx
+}
+.lost_items {
+  display: flex;
+  width: 588rpx;
+  margin-bottom: 38rpx;
+}
+.lost_confirm button{
+  margin-top: 128rpx;
+  margin-left: 108rpx;
+  width: 345rpx;
+}

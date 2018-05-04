@@ -1,0 +1,19 @@
+<view class="ourlogo">
+  <image src='../../images/logo.jpg'></image>
+</view>
+<view class="cells">
+  <text>关于我们</text>
+  <text selectable="true">找卡帮</text>
+</view>
+<view class="cells">
+  <text>联系号码</text>
+  <text selectable="true">13724132231</text>
+</view>
+<view class="cells">
+ <text> 微信号</text>
+  <text selectable="true">13724132231</text>
+</view>
+<view class="cells">
+  <text>邮箱</text>
+  <text selectable="true">1014270057@qq.com</text>
+</view>

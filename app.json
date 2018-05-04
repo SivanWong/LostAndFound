@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/foundrecord/foundrecord",
+    "pages/lostermsg/lostermsg",
+    "pages/lostrecord/lostrecord",
+    "pages/contact/contact",
+    "pages/lost/lost",
+    "pages/foundermsg/foundermsg",
+    "pages/found/found",
+    "pages/report/report"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "找卡小包",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+  "color": "#48484b",  
+  "selectedColor" : "#000000",
+  "backgroundColor": "#efeff4",  
+  "list": [
+    {
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index-visited.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "iconPath": "images/about.png",
+      "selectedIconPath": "images/about-visited.png",
+      "pagePath": "pages/me/me",
+      "text": "我"
+    }
+    ]
+  }
+}

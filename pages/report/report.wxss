@@ -1,0 +1,13 @@
+/* pages/report/report.wxss */
+.userinfo {
+  margin: 0 auto;
+  text-align: center;
+}
+.userinfo textarea {
+  border: 5rpx solid gray;
+  margin-top: 88rpx;
+}
+.userinfo button {
+  width: 345rpx;
+  margin-top: 168rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/report/report.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <form  bindsubmit="formSubmit">
+      <text>举报理由</text>
+      <textarea bindblur='write'></textarea>
+    </form>
+    <button bindtap='confirm' formType="submit">确定</button>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<!--lostrecord.wxml-->
+<!-- <view class="record-big-box">
+  <text class="record-title">{{title}}</text>
+  <view class="table">
+    <view class="tr">
+      <view wx:for="{{lostTh}}" class="th">
+      {{item.title}}
+      </view>
+    </view>
+    <view  wx:for="{{lostMsg}}" class="tbody-tr">
+      <view class="td">
+        {{item.cardUserName}}
+      </view>
+      <view class="td">
+        {{item.userId}}
+      </view>
+      <view class="td">
+        {{item.cardId}}
+      </view>
+      <view class="td {{color}}">
+        {{loststatus}}
+      </view>
+    </view>
+  </view>
+</view> -->
+<scroll-view scroll-y="true" style="height: 100%">
+  <view class="wrap">
+    <text class="record-title">丢卡记录</text>
+    <view class="record-box" wx:for="{{lostMsg}}">
+      <view class="msg-box">
+        <text>姓名：<text class="msg-value" selectable="true">{{item.cardUserName}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>学号： <text class="msg-value" selectable="true">{{item.userId}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>卡号： <text class="msg-value" selectable="true">{{item.cardId}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>微信： <text class="msg-value" selectable="true">{{item.weixinNum}}</text></text>
+      </view>
+      <view class="msg-box">
+        <text>手机： <text class="msg-value" selectable="true">{{item.phone}}</text></text>
+      </view>
+      <view class="msg-box">
+        <block  wx:if="{{item.extend==0}}">
+           <text class="msg-status red" selectable="true">匹配失败</text>
+        </block>
+       <block wx:else>
+        <text class="mag-status blue" selectable="true" >匹配成功</text>
+        </block>
+      </view>
+      <button type="warn" size="mini" class="delete" data-deleteid="{{item.id}}" bindtap="deleteClick" >删除</button>
+    </view>
+  </view>
+</scroll-view>

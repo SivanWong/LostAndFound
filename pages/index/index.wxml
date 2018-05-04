@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <image src='../../images/line.png'></image>
+  <view class="userinfo">
+      <!-- <image src='../../images/lost.png'></image>
+      <image src='../../images/found.png'></image> -->
+      <navigator url="/pages/lost/lost" class="index-box" hover-class="index-box-active">
+     
+        <view class="left-box">
+          <text>我想\n找卡</text>
+        </view>
+        <view class="right-box">
+          <text>LOST</text>
+        </view>
+      </navigator>
+      
+      <navigator url="/pages/found/found" class="index-box" hover-class="index-box-active">
+        <view class="left-box">
+          <text>我捡\n到卡</text>
+        </view>
+        <view class="right-box">
+          <text>FOUND</text>
+        </view>
+      </navigator>
+  </view>
+
+</view>

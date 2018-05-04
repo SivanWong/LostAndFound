@@ -1,0 +1,23 @@
+<!--pages/foundermsg/foundermsg.wxml-->
+<view class='msg-big-box'>
+  <text class="title">捡卡人信息</text>
+<view class="msg-box">
+  <text>姓名：<text class="msg-value" selectable="true">{{cardUserName}}</text></text>
+  
+</view>
+<view class="msg-box">
+  <text>微信号： <text class="msg-value" selectable="true">{{weixinNum}}</text></text>
+</view>
+<view class="msg-box">
+  <text>手机： <text class="msg-value" selectable="true">{{phone}}</text></text>
+</view>
+<view class="msg-img">
+   <image src='{{cardUrl}}' bindtap="bindImage" data-src='{{cardUrl}}'id="1"></image> 
+</view>
+<text class="report" bindtap='report'>
+  恶作剧？举报Ta
+</text>
+</view>
+
+
+
